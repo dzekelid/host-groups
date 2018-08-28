@@ -7,8 +7,8 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/713-bmc-so
 x-kinRank: "8"
 x-alexaRank: "27308"
 tags: Host Groups
-created: "2018-08-25"
-modified: "2018-08-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/apis.md
 specificationVersion: "0.14"
 apis:
@@ -25,6 +25,28 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/v1hostgroups-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/v1hostgroups-get-openapi.md
+- name: BMC Software Merged API - Search Hostgroups
+  x-api-slug: v1hostgroupssearch-get
+  description: Searches the hostgroups in your account
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/713-bmc-software.jpg
+  humanURL: http://www.bmc.com
+  baseURL: https:///
+  tags: Monitoring, Applications, Devops, SaaS, Enterprise, Technology, ISP, API Provider,
+    API Service Provider, Profiles, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/v1hostgroupssearch-get-openapi.md
+- name: BMC Software Merged API - Get Hostgroup by Id
+  x-api-slug: v1hostgroupshostgroupid-get
+  description: Retrieves a single hostgroup by its id
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/713-bmc-software.jpg
+  humanURL: http://www.bmc.com
+  baseURL: https:///
+  tags: Monitoring, Applications, Devops, SaaS, Enterprise, Technology, ISP, API Provider,
+    API Service Provider, Profiles, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/v1hostgroupshostgroupid-get-openapi.md
 - name: BMC Software Merged API - Create Hostgroup
   x-api-slug: v1hostgroups-post
   description: Create a Hostgroup
@@ -51,6 +73,17 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/v1hostgroupshostgroupid-put-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/v1hostgroupshostgroupid-put-openapi.md
+- name: BMC Software Merged API - Delete Hostgroup
+  x-api-slug: v1hostgroupshostgroupid-delete
+  description: Delete an hostgroup
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/713-bmc-software.jpg
+  humanURL: http://www.bmc.com
+  baseURL: https:///
+  tags: Monitoring, Applications, Devops, SaaS, Enterprise, Technology, ISP, API Provider,
+    API Service Provider, Profiles, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/v1hostgroupshostgroupid-delete-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://blogger.api.gallery.streamdata.io

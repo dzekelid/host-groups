@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Host Groups",
+	"description": "This is a repository of host groups APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/host-groups.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-27",
+	"url": "http://host-groups.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "BMC Software",
+			"x-api-slug": "bmc-software",
+			"description": "Transform your digital enterprise with BMC IT solutions. From mainframe to cloud to mobile, we???ll help you drive innovation and industrial efficiency.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/screen-capture-api/713-bmc-software.jpg",
+			"humanURL": "http://www.bmc.com",
+			"baseURL": "https:///",
+			"tags": "Host Groups",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Host Groups",
+	"include": [
+		{
+			"name": "BMC Software",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-topics/host-groups/master/_listings/bmc-software/apis.yaml"
+		}
+	]
+}

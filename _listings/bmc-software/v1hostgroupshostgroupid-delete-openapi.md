@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: BMC Software
 x-complete: 0
 info:
-  title: BMC Software API Update Hostgroup
+  title: BMC Software API Delete Hostgroup
   version: 1.0.0
-  description: Update a Hostgroup
+  description: Delete an hostgroup
 schemes:
 - http
 produces:
@@ -75,6 +75,24 @@ paths:
       description: Update a Hostgroup
       operationId: update-hostgroup
       x-api-path-slug: v1hostgroupshostgroupid-put
+      responses:
+        200:
+          description: OK
+      tags:
+      - Hostgroups
+    delete:
+      summary: Delete Hostgroup
+      description: Delete an hostgroup
+      operationId: delete-hostgroup
+      x-api-path-slug: v1hostgroupshostgroupid-delete
+      parameters:
+      - in: query
+        name: |-
+          hostgroupId
+          The hostgroup to delete
+          forceRemove
+          Remove the hostgroup, even if it&#39;s being used by a dashboard or alarm
+        type: string
       responses:
         200:
           description: OK

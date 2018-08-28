@@ -3,9 +3,9 @@ swagger: "2.0"
 x-collection-name: BMC Software
 x-complete: 0
 info:
-  title: BMC Software API Update Hostgroup
+  title: BMC Software API Search Hostgroups
   version: 1.0.0
-  description: Update a Hostgroup
+  description: Searches the hostgroups in your account
 schemes:
 - http
 produces:
@@ -19,16 +19,6 @@ paths:
       description: Get all of the Hostgroups in your account
       operationId: get-all-hostgroups
       x-api-path-slug: v1hostgroups-get
-      responses:
-        200:
-          description: OK
-      tags:
-      - Hostgroups
-    post:
-      summary: Create Hostgroup
-      description: Create a Hostgroup
-      operationId: create-hostgroup
-      x-api-path-slug: v1hostgroups-post
       responses:
         200:
           description: OK
@@ -48,33 +38,6 @@ paths:
 
           name - search by the name of the hostgroup
         type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Hostgroups
-  /v1/hostgroups/:hostgroupId:
-    get:
-      summary: Get Hostgroup by Id
-      description: Retrieves a single hostgroup by its id
-      operationId: get-hostgroup-by-id
-      x-api-path-slug: v1hostgroupshostgroupid-get
-      parameters:
-      - in: query
-        name: |-
-          hostgroupId
-          The Id of the hostgroup you are requesting
-        type: string
-      responses:
-        200:
-          description: OK
-      tags:
-      - Hostgroups
-    put:
-      summary: Update Hostgroup
-      description: Update a Hostgroup
-      operationId: update-hostgroup
-      x-api-path-slug: v1hostgroupshostgroupid-put
       responses:
         200:
           description: OK
